@@ -4,11 +4,14 @@ import { mockData } from './mock/data'
 
 axios.defaults.baseURL = SEARCH_API_BASE_URL
 
-const searchApi = async (keyword) =>
-  await axios.post('/keyword_search', {
+const searchApi = async (keyword) => {
+  const res = await axios.post('/keyword_search', {
     login_token: LOGIN_TOKEN,
     search_phrase: keyword,
   })
+  const { data } = res
+  return data.data
+}
 
 const searchApiMock = async (keyword) =>
   await new Promise((resolve, reject) => {
