@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/interview/(.*)",
+        "destination": "/api/proxy"
+      }
+    ]
+   }
