@@ -30,7 +30,7 @@ const searchApiMock = async (keyword) =>
     }, 3000)
   })
 
-const search = process.env.REACT_APP_ENV === 'mock' ? searchApiMock : searchApi
+const search = process.env.REACT_APP_ENV === 'mock' ? searchApi : searchApiMock
 
 export const API = {
   search
