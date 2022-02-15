@@ -21,7 +21,7 @@ const theme = createTheme({
 export { theme };
 
 export const LOGIN_TOKEN = "INTERVIEW_SIMPLY2021";
-export const SEARCH_API_BASE_URL = "http://3.141.23.218:5000/interview";
+export const SEARCH_API_BASE_URL = "/interview";
 export const HOME_SEARCH_TITLE = "Search Trends";
 export const HOME_SEARCH_PLACEHOLDER = "Search for new products in 961K stores";
 export const SEARCH_RESULT_TITLE = 'Related product trends';
