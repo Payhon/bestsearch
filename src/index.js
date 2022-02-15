@@ -8,7 +8,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import { reducers } from './redux/reducers';
 
 import { theme } from './config';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

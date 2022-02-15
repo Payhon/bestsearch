@@ -5,8 +5,6 @@ import Header from './components/Header';
 import Index from './pages/Index';
 import Search from './pages/Search';
 
-import './App.css';
-
 function App() {
   return (
     <>
