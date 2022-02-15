@@ -22,6 +22,9 @@ export { theme };
 
 export const LOGIN_TOKEN = "INTERVIEW_SIMPLY2021";
 export const SEARCH_API_BASE_URL = "/interview";
+export const HEADER_WORD_LOGO_TXT = 'ST';
+export const HEADER_FULL_LOGO_PRIMARY_TXT = 'Best';
+export const HEADER_FULL_LOGO_SECONDARY_TXT = 'Search';
 export const HOME_SEARCH_TITLE = "Search Trends";
 export const HOME_SEARCH_PLACEHOLDER = "Search for new products in 961K stores";
 export const SEARCH_RESULT_TITLE = 'Related product trends';

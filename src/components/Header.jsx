@@ -2,6 +2,11 @@ import { Link, useLocation } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import SearchBox from "./SearchBox";
+import {
+	HEADER_WORD_LOGO_TXT,
+	HEADER_FULL_LOGO_PRIMARY_TXT,
+	HEADER_FULL_LOGO_SECONDARY_TXT,
+} from "../config";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -19,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 
 	trimUnderline: {
-		color: 'inherit', 
-		textDecoration: 'none'
+		color: "inherit",
+		textDecoration: "none",
 	},
 
 	fullLogo: {
@@ -47,8 +52,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 
 	fw500: {
-		fontWeight: 500
-	}
+		fontWeight: 500,
+	},
 }));
 
 function Header() {
@@ -61,9 +66,14 @@ function Header() {
 				<Typography component="h1" variant="h6">
 					<Link to="/" className={classes.trimUnderline}>
 						<Box className={classes.fullLogo}>
-							<strong className={classes.fw500}>Best</strong>Search
+							<strong className={classes.fw500}>
+								{HEADER_FULL_LOGO_PRIMARY_TXT}
+							</strong>
+							{HEADER_FULL_LOGO_SECONDARY_TXT}
 						</Box>
-						<Box className={classes.wordLogo}>ST</Box>
+						<Box className={classes.wordLogo}>
+							{HEADER_WORD_LOGO_TXT}
+						</Box>
 					</Link>
 				</Typography>
 				{path.startsWith("/search") && <SearchBox />}
